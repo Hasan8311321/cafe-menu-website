@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(123, 5, 214);
+    color: white;
+    font-family: Arial;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+td {
+    border: 1px solid white;
+    font-size: 16px;
+    padding: 8px 15px;
+}
+
+img {
+    width: 220px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #e0e0e0;
+    color: black;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
