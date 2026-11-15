@@ -1,0 +1,76 @@
+<!-- Muhammad Hasan Rasheed -->
+<!-- 26i-3300 -->
+<!-- SE-E -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Muhammad Hasan Rasheed -->
+<!-- 26i-3300 -->
+<!-- SE-E -->
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="Cafe_Menu.html">Home (Drinks)</a>
+        <a href="menu.html">Food Menu</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <h1>Contact Us</h1>
+    
+    <h2>Cafe Details:</h2>
+
+    <img src="./images.jfif" alt="A description of the image">
+
+    <table>
+        <tr>
+            <td>Location</td>
+            <td>Main Boulevard, Islamabad</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>+92 300 1234567</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>info@ourcafe.com</td>
+        </tr>
+        <tr>
+            <td>Opening Hours</td>
+            <td>9:00 AM - 11:00 PM</td>
+        </tr>
+    </table>
+
+    <h3>Send Us a Message</h3>
+    <form id="contactForm" onsubmit="submitForm(event)">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="35" required></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Muhammad Hasan Rasheed | Roll No: 26i-3300 | Section: SE-E</p>
+    </footer>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            var userName = document.getElementById("name").value;
+            alert("Thank you, " + userName + "! Your message has been sent.");
+            document.getElementById("contactForm").reset();
+        }
+    </script>
+</body>
+</html>
